@@ -1,6 +1,6 @@
 using System;
 
-namespace ProyectoRPG
+namespace CIFPCarlosIII.ED.UT04.Grupo3
 {
     class Program
     {
@@ -8,18 +8,18 @@ namespace ProyectoRPG
         {
             Console.WriteLine("=== BIENVENIDO AL REINO DE LOS HÉROES ===\n");
 
-            Personaje pers = new Personaje();
-            pers.nombre = "Héroe Genérico";
-            Console.WriteLine("Se ha creado un personaje: " + pers.nombre);
-            pers.Atacar();
-            pers.SubirNivel();
+            Personaje personaje = new Personaje();
+            personaje.nombre = "Héroe Genérico";
+            Console.WriteLine("Se ha creado un personaje: " + personaje.nombre);
+            personaje.Atacar();
+            personaje.SubirNivel();
 
             Console.WriteLine("\n--- Guerrero ---");
-            Guerrero guer = new Guerrero();
-            guer.nombre = "Guerrero Valiente";
-            guer.Atacar();
-            guer.AtaquePoderoso();
-            guer.DefenderseConEscudo();
+            Guerrero guerrero = new Guerrero();
+            guerrero.nombre = "Guerrero Valiente";
+            guerrero.Atacar();
+            guerrero.AtaquePoderoso();
+            guerrero.DefenderseConEscudo();
 
             Console.WriteLine("\n--- Berserker ---");
             Berserker bers = new Berserker();
