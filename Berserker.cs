@@ -3,22 +3,23 @@ using System;
 namespace CIFPCarlosIII.ED.UT04.Grupo3
 {
     public class Berserker : Guerrero
-    {
+    {   
+        //Atributo furia
         public int furia;
-
+        //Constructor del Berserker
         public Berserker()
         {
             this.furia = 0;
             this.arma = "Hacha de batalla";
             this.fuerza = 20;
         }
-
+        //Metodo público de Berserker, aumenta la furia en 30
         public void EntrarEnFuria()
         {
             furia += 30;
             Console.WriteLine(nombre + " entra en estado de furia! Furia actual: " + furia);
         }
-
+        //Metodo público de Berserker ataque que alutilizarse baja furia a 0
         public void AtaqueFurioso()
         {
             if (furia >= 50)
@@ -33,16 +34,6 @@ namespace CIFPCarlosIII.ED.UT04.Grupo3
             }
         }
 
-        public string MostrarInfo()
-        {
-            return "=== INFORMACIÓN DEL PERSONAJE ===" +
-                   "\nNombre: " + nombre +
-                   "\nClase: " + this.GetType().Name +
-                   "\nNivel: " + nivel +
-                   "\nVida: " + vida +
-                   "\nFuerza: " + fuerza +
-                   "\nArma: " + arma +
-                   "\nFuria: " + furia;
-        }
+        
     }
 }

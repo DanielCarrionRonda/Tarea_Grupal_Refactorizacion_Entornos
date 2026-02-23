@@ -20,14 +20,15 @@ namespace CIFPCarlosIII.ED.UT04.Grupo3
             guerrero.Atacar();
             guerrero.AtaquePoderoso();
             guerrero.DefenderseConEscudo();
-
+            Console.WriteLine("\n" + personaje.MostrarInfo(guerrero));
+            
             Console.WriteLine("\n--- Berserker ---");
             Berserker bers = new Berserker();
             bers.nombre = "Destructor";
             bers.EntrarEnFuria();
             bers.EntrarEnFuria();
             bers.AtaqueFurioso();
-            Console.WriteLine("\n" + bers.MostrarInfo());
+            Console.WriteLine("\n" + personaje.MostrarInfo(bers));
 
             Console.WriteLine("\n--- Mago ---");
             Mago magi = new Mago();
@@ -36,6 +37,7 @@ namespace CIFPCarlosIII.ED.UT04.Grupo3
             magi.LanzarHechizo();
             magi.Meditar();
             magi.LanzarHechizo();
+            Console.WriteLine("\n" + personaje.MostrarInfo(magi));
 
             Console.WriteLine("\n--- Nigromante ---");
             Nigromante nigro = new Nigromante();
@@ -44,6 +46,7 @@ namespace CIFPCarlosIII.ED.UT04.Grupo3
             nigro.CapturarAlma();
             nigro.InvocarNoMuerto();
             nigro.DrenarVida();
+            Console.WriteLine("\n" + personaje.MostrarInfo(nigro));
 
             Console.WriteLine("\n=== FIN DE LA DEMOSTRACIÓN ===");
             Console.ReadLine();
