@@ -2,6 +2,10 @@ using System;
 
 namespace CIFPCarlosIII.ED.UT04.Grupo3
 {
+    
+    /// <summary>
+    /// Clase personaje que indica los atributos básicos de un personaje como el nombre, vida o el nivel.
+    /// </summary>
     public class Personaje
     {
         
@@ -9,30 +13,47 @@ namespace CIFPCarlosIII.ED.UT04.Grupo3
         public int vida;
         public int nivel;
 
+        /// <summary>
+        /// Constructor sin parámetros de Personaje
+        /// </summary>
         public Personaje()
         {
             this.vida = 100;
             this.nivel = 1;
         }
 
-        public Personaje(string nombre)
+        /// <summary>
+        /// Constructor con un parámetro (nombre) de Personaje
+        /// </summary>
+        /// <param name="nombre">Parámetro que indica el nombre del personaje</param>
+        public Personaje(string nombre) 
         {
             this.nombre = nombre;
             this.vida = 100;
             this.nivel = 1;
         } 
 
+        /// <summary>
+        /// Método que indica quién ha realizado un ataque básico.
+        /// </summary>
         public void Atacar()
         {
             Console.WriteLine(nombre + " realiza un ataque básico!");
         }
 
+        /// <summary>
+        /// Método que indica cuánto daño recibe el personaje
+        /// </summary>
+        /// <param name="danio">indica la cantidad de daño en tipo de dato número entero</param>
         public void RecibirDanio(int danio)
         {
             vida -= danio;
             Console.WriteLine(nombre + " recibe " + danio + " de daño. Vida restante: " + vida);
         }
 
+        /// <summary>
+        /// Método que te sube 1 nivel y te aumenta la vida en +20.
+        /// </summary>
         public void SubirNivel()
         {
             nivel++;
