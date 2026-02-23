@@ -4,11 +4,19 @@ namespace ProyectoRPG
 {
     public class Guerrero : Personaje
     {
+        private string nombre;
         public int fuerza;
         public string arma;
 
         public Guerrero()
         {
+            this.fuerza = 15;
+            this.arma = "Espada";
+        }
+
+        public Guerrero(string nombre) : base(nombre)
+        {
+            this.nombre = nombre;
             this.fuerza = 15;
             this.arma = "Espada";
         }

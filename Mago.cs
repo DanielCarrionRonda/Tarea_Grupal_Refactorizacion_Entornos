@@ -4,11 +4,21 @@ namespace ProyectoRPG
 {
     public class Mago : Personaje
     {
-        public int mana;
+        private string nombre;
+        private int _mana;
         public string hechizo;
+        
+        public int mana { get; set; }
 
         public Mago()
         {
+            this.mana = 100;
+            this.hechizo = "Bola de fuego";
+        }
+
+        public Mago(string nombre) : base(nombre)
+        {
+            this.nombre = nombre;
             this.mana = 100;
             this.hechizo = "Bola de fuego";
         }
