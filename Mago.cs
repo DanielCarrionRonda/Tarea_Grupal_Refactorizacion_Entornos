@@ -15,14 +15,14 @@ namespace CIFPCarlosIII.ED.UT04.Grupo3
 
         public Mago()
         {
-            this.mana = 100;
-            this.hechizo = "Bola de fuego";
+            _mana = 100;
+            hechizo = "Bola de fuego";
         }
 
         public Mago(string nombre) : base(nombre)
         {
             this.nombre = nombre;
-            this.mana = 100;
+            _mana = 100;
             this.hechizo = "Bola de fuego";
         }
         /// <summary>

@@ -9,9 +9,11 @@ namespace CIFPCarlosIII.ED.UT04.Grupo3
     public class Personaje
     {
         
-        public string nombre;
+        private string _nombre;
         public int vida;
         public int nivel;
+
+        public string nombre { get; set; }
 
         /// <summary>
         /// Constructor sin parámetros de Personaje
