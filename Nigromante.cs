@@ -2,7 +2,7 @@ using System;
 
 namespace ProyectoRPG
 {
-   /// <summary>
+    /// <summary>
     /// Representa una clase de personaje especializada en la magia oscura y la manipulación de almas.
     /// Hereda de la clase base <see cref="Mago"/>.
     /// </summary>

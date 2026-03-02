@@ -1,5 +1,7 @@
 using System;
 
+using System;
+
 namespace ProyectoRPG
 {
     /// <summary>
@@ -9,8 +11,12 @@ namespace ProyectoRPG
     class Program
     {
         /// <summary>
-        /// Método de entrada principal que ejecuta la lógica de demostración del sistema de clases.
+        /// Método de entrada principal (Entry Point) que ejecuta la lógica de demostración del sistema de clases.
         /// </summary>
+        /// <param name="args">Colección de argumentos de línea de comandos pasados al ejecutar la aplicación.</param>
+        /// <remarks>
+        /// El flujo del programa realiza las siguientes acciones:
+        /// </remarks>
         static void Main(string[] args)
         {
             Console.WriteLine("=== BIENVENIDO AL REINO DE LOS HÉROES ===\n");

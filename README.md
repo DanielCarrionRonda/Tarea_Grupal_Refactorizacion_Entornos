@@ -15,12 +15,14 @@ El proyecto contiene una jerarquía de clases que representan personajes de un v
 ## Cómo ejecutar
 
 ### Opción 1: Visual Studio
+
 1. Abre Visual Studio
 2. File → Open → Project/Solution
 3. Selecciona el archivo `ProyectoRPG.csproj`
 4. Presiona F5 para ejecutar
 
 ### Opción 2: Línea de comandos
+
 ```bash
 dotnet run
 ```
