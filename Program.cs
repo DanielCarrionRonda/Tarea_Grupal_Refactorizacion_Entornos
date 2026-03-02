@@ -2,28 +2,37 @@ using System;
 
 namespace ProyectoRPG
 {
+    /// <summary>
+    /// Clase principal que actúa como punto de entrada para la simulación del RPG.
+    /// Coordina la creación de instancias y la demostración de las capacidades de cada clase de personaje.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Método de entrada principal que ejecuta la lógica de demostración del sistema de clases.
+        /// </summary>
         static void Main(string[] args)
         {
             Console.WriteLine("=== BIENVENIDO AL REINO DE LOS HÉROES ===\n");
 
+            // Demostración de Personaje base
             Personaje pers = new Personaje();
-            pers.nombre = "Héroe Genérico";
+            pers.nombre = "Kasuga";
             Console.WriteLine("Se ha creado un personaje: " + pers.nombre);
             pers.Atacar();
             pers.SubirNivel();
 
             Console.WriteLine("\n--- Guerrero ---");
             Guerrero guer = new Guerrero();
-            guer.nombre = "Guerrero Valiente";
+            guer.nombre = "Gael";
             guer.Atacar();
             guer.AtaquePoderoso();
             guer.DefenderseConEscudo();
 
             Console.WriteLine("\n--- Berserker ---");
-            Berserker bers = new Berserker();
-            bers.nombre = "Destructor";
+            Berserker bers = new Berserker(3);
+            bers.nombre = "Ragval";
+            bers.SubirNivel();
             bers.EntrarEnFuria();
             bers.EntrarEnFuria();
             bers.AtaqueFurioso();
@@ -38,8 +47,9 @@ namespace ProyectoRPG
             magi.LanzarHechizo();
 
             Console.WriteLine("\n--- Nigromante ---");
-            Nigromante nigro = new Nigromante();
-            nigro.nombre = "Señor Oscuro";
+            Nigromante nigro = new Nigromante(2);
+            nigro.nombre = "Sauron't";
+            nigro.SubirNivel();
             nigro.CapturarAlma();
             nigro.CapturarAlma();
             nigro.InvocarNoMuerto();

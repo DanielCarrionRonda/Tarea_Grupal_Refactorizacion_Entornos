@@ -12,7 +12,10 @@ namespace ProyectoRPG
             this.arma = "Hacha de batalla";
             this.fuerza = 20;
         }
-
+        public Berserker(int nivel)
+        {
+            this.nivel = nivel;
+        }
         public void EntrarEnFuria()
         {
             furia += 30;
