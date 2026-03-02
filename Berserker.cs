@@ -13,7 +13,12 @@ namespace CIFPCarlosIII.ED.UT04.Grupo3
             this.arma = "Hacha de batalla";
             this.fuerza = 20;
         }
-        //Metodo público de Berserker, aumenta la furia en 30
+                //Metodo público de Berserker, aumenta la furia en 30
+        public Berserker(int nivel)
+        {
+            this.nivel = nivel;
+        }
+
         public void EntrarEnFuria()
         {
             furia += 30;
